@@ -1,7 +1,8 @@
 class Task:
-    def __init__(self, title, description):
+    def __init__(self, title, description, priority="Média"):
         self.title = title
         self.description = description
+        self.priority = priority
         self.completed = False
 
 tasks = []
