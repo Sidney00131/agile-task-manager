@@ -21,4 +21,5 @@ def update_task(index, title, description):
     tasks[index].description = description
 
 def delete_task(index):
-    tasks.pop(index)
+    if index < len(tasks):
+        tasks.pop(index)
