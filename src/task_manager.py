@@ -12,7 +12,8 @@ def create_task(title, description):
     return task
 
 def list_tasks():
-    return tasks
+    return [task.title for task in tasks]
+
 
 def update_task(index, title, description):
     tasks[index].title = title
